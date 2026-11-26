@@ -15,6 +15,12 @@ If a client release is waiting on checkout, I can take one hosted payment flow f
 
 The scope covers one existing Laravel app, one currency, one approved merchant sandbox and one one-time hosted checkout. Your team controls production release. For seven calendar days after acceptance, I acknowledge reported issues with these checks within one business day and correct in-scope defects.
 
+### Example from a checkout review
+
+In the public Laravel sample, an order must be confirmed before payment can begin. A successful result changes its status to paid. The PayPal adapter simulates approval locally. I reran the six payment API tests on PHP 8.3 with an in-memory database. All 15 assertions passed. [Payment service](https://github.com/mohamedalaa253695/order-management-service/blob/4a3524a72e747a93fa3fd351197fd76a62b0ed44/app/Services/Api/V1/PaymentService.php) · [Adapter](https://github.com/mohamedalaa253695/order-management-service/blob/4a3524a72e747a93fa3fd351197fd76a62b0ed44/app/Strategies/Gateways/PaypalGateway.php) · [Feature tests](https://github.com/mohamedalaa253695/order-management-service/blob/4a3524a72e747a93fa3fd351197fd76a62b0ed44/tests/Feature/PaymentTest.php)
+
+**The release lead still needs a merchant sandbox test.** For your checkout, the handoff would show the provider event, the order state before and after it, and whether repeating the event triggers a second fulfillment. Your release lead can use that evidence to approve the change or send a specific defect back to engineering.
+
 ### Send a brief
 
 Tell me the **gateway, expected order state and release date**. Email a summary or download the form, fill it locally and return it by email. Keep customer data and credentials in your own systems. I confirm fit, dates and invoicing privately.

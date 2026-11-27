@@ -27,4 +27,6 @@ Tell me the **gateway, expected order state and release date**. Email a summary 
 
 [Email Mohamed](mailto:mohamedalaa253695%2Bgateway@gmail.com?subject=Laravel%20gateway%20brief) · [Download the proposal and private intake](https://github.com/mohamedalaa253695/laravel-payment-sprint/raw/refs/heads/main/laravel-payment-sprint.pdf)
 
+Have a general question about price, scope or acceptance? You can [ask on GitHub](https://github.com/mohamedalaa253695/laravel-payment-sprint/issues/1). The conversation is public. Email your project brief privately.
+
 Mohamed Alaa is a senior backend engineer in Egypt with 6+ years of experience in Laravel, PHP, APIs, payments, integrations and deployments. This public code sample shows order and payment endpoints and feature tests. [View the Laravel sample](https://github.com/mohamedalaa253695/order-management-service/tree/4a3524a72e747a93fa3fd351197fd76a62b0ed44)
